@@ -13,17 +13,17 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddToCart }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-stone-900 sm:text-4xl">
-            Choose Your <span className="text-amber-600">Crunch</span>
+            The <span className="text-amber-600">One & Only</span>
           </h2>
           <p className="mt-4 text-lg text-stone-500">
-            From classic garlic to fiery chili, we have a flavor for every mood.
+            Our signature Adobong Mani. 10 Pesos of pure happiness.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {PRODUCTS.map((product) => (
-            <div key={product.id} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full border border-stone-100">
-              <div className="relative h-64 overflow-hidden group">
+            <div key={product.id} className="w-full max-w-sm bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col border border-stone-100">
+              <div className="relative h-72 overflow-hidden group">
                 <img 
                   src={product.image} 
                   alt={product.name} 
@@ -48,17 +48,17 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddToCart }) => {
               
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-stone-900">{product.name}</h3>
+                    <h3 className="text-2xl font-bold text-stone-900">{product.name}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2 mb-3">
                     {product.tags.map(tag => (
                         <span key={tag} className="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded-md">{tag}</span>
                     ))}
                 </div>
-                <p className="text-stone-500 text-sm mb-4 flex-1">{product.description}</p>
+                <p className="text-stone-500 text-base mb-6 flex-1">{product.description}</p>
                 
                 <div className="mt-auto flex items-center justify-between border-t border-stone-100 pt-4">
-                    <span className="text-2xl font-bold text-amber-700">₱{product.price}</span>
+                    <span className="text-3xl font-bold text-amber-700">₱{product.price}</span>
                     <button 
                         onClick={() => onAddToCart(product)}
                         className="text-amber-600 font-semibold text-sm hover:text-amber-800 transition-colors md:hidden"
@@ -66,7 +66,7 @@ export const ProductList: React.FC<ProductListProps> = ({ onAddToCart }) => {
                         Add to Cart
                     </button>
                     <div className="hidden md:flex text-amber-400">
-                        {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
+                        {[1,2,3,4,5].map(i => <Star key={i} size={18} fill="currentColor" />)}
                     </div>
                 </div>
               </div>

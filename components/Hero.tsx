@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ onShopNow }) => {
       {/* Background Image Overlay */}
       <div className="absolute inset-0 z-0 opacity-40">
         <img 
-          src="https://picsum.photos/id/431/1920/1080" 
+          src="https://images.unsplash.com/photo-1599324873973-18c9d9b09c4f?auto=format&fit=crop&w=1920&q=80" 
           alt="Peanuts Background" 
           className="w-full h-full object-cover"
         />
