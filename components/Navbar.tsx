@@ -21,9 +21,11 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount, currentView, onChange
             className="flex-shrink-0 flex items-center cursor-pointer group"
             onClick={() => onChangeView(AppView.HOME)}
           >
-            <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center mr-2 group-hover:bg-amber-500 transition-colors">
-              <ShoppingBag className="text-stone-900" size={24} />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Thoulorz Logo" 
+              className="h-10 w-10 mr-2 object-contain"
+            />
             <span className="font-bold text-xl tracking-wider">THOULORZ</span>
           </div>
 
