@@ -2,8 +2,8 @@ import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 import { SYSTEM_INSTRUCTION } from '../constants';
 
 // Initialize the API client
-// Note: process.env.API_KEY is expected to be available in the runtime environment
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Note: process.env.GEMINI_API_KEY is expected to be available in the runtime environment
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 let chatSession: Chat | null = null;
 
