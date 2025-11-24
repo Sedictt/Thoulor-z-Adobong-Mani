@@ -6,7 +6,7 @@ export const PRODUCTS: Product[] = [
     name: 'Thoulorz Adobong Mani Special',
     description: 'The legendary classic. Deep-fried to golden perfection with crispy garlic chips and just the right amount of salt. Simple, affordable, and addictive.',
     price: 10,
-    image: 'https://images.unsplash.com/photo-1627308594171-d864d81e932e?auto=format&fit=crop&w=800&q=80',
+    image: '/adobong-mani.jpg',
     tags: ['Best Seller', 'Classic', 'Sulit Deal'],
     spiceLevel: 0,
   }
